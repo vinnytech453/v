@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>User Dashboard</title>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h2>Welcome, [Username]!</h2>
+
+        <!-- Post Form -->
+        <form id="postForm">
+            <label for="postContent">Post something:</label>
+            <textarea id="postContent" name="postContent" required></textarea>
+            <button type="button" onclick="postContent()">Post</button>
+        </form>
+
+        <!-- User Posts -->
+        <div id="userPosts" class="post-container">
+            <!-- Display user's posts here -->
+        </div>
+
+        <!-- Search Bar -->
+        <form id="searchForm">
+            <label for="searchUser">Search for users:</label>
+            <input type="text" id="searchUser" name="searchUser" required>
+            <button type="button" onclick="searchUser()">Search</button>
+        </form>
+
+        <!-- Search Results -->
+        <div id="searchResults" class="search-results-container">
+            <!-- Display search results here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
